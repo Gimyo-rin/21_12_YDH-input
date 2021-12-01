@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+		body{
+			text-align: center;
+			background-color: #0d0d0d;
+			background-size: cover;
+			font-family: 'Comfortaa', cursive;
+		}
+		h1{
+			color: white;
+			font-weight: 100;
+			font-size: 3em;
+		}
+		
+		#textBox{
+			width: 580px;
+			height: 55vh;
+			margin-top: 30px;
+			background: none;
+			color: white;
+			font-size: 1rem;
+			border-radius: 10px; border-color: white;
+			border-width: 2px;
+			padding: 10px;
+			vertical-align : top;
+
+		}
+		#submit{
+			width: 600px;
+			height: 50px;
+			margin: auto; display: block; margin-top: 30px;
+			padding: 10px 20px;
+			font-family: 'Comfortaa', cursive;
+			font-size: 1.5rem;
+			color: #555;
+			background-color: white;
+			border-radius: 10px; border: none;
+		}
+		#submit:hover {
+			background-color: lightgray;
+		}
+	</style>
+</head>
+<body>
+	<h1>Yeondeunghoe</h1>
+
+<div>
+    <form id="frm" method="POST" class="wish">
+       <input type="text" id="textBox" placeholder="기억하고 싶은 것 또는 소원을 입력하세요.">
+    </form>
+	<button id="submit"> start </button>
+</div>
+
+<script type="text/javascript">
+	var result = "";
+	
+	submit.onclick = function(){
+		var k = document.getElementById("textBox");
+		for(var i=0; i<k.length; i++){
+				result += k[i].value;
+		}
+ 		console.log(result);
+ 		sessionStorage.setItem("final", result);
+ 		location.href = "main.html";
+ 	};
+
+</script>
+</body>
+</html>
